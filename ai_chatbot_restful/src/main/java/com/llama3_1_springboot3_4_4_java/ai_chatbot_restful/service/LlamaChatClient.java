@@ -14,7 +14,7 @@ public class LlamaChatClient implements ILlamaChatClient{
     private final String baseUrl;
     private final String model;
 
-    public LlamaChatClient(RestTemplate restTemplate, @Value("${spring.ai.ollama.base-url}") String baseUrl, @Value("${spring.ai.ollama.model}") String model){
+    public LlamaChatClient(RestTemplate restTemplate, @Value("${spring.ai.ollama.base-url}") String baseUrl, @Value("${spring.ai.ollama.chat.options.model}") String model){
         this.restTemplate = restTemplate;
         this.baseUrl = baseUrl;
         this.model = model;
